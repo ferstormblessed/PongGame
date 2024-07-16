@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 public class BallMovement : MonoBehaviour
 {
+
     [SerializeField] private Rigidbody2D _ballRigidbody2D;
     [SerializeField] private float _initialSpeed;
     [SerializeField] private float _velocityMultiplier;
@@ -56,6 +57,7 @@ public class BallMovement : MonoBehaviour
 
     private void IsGameOver()
     {
+
         if (GameManager.Instance.ScorePlayer1 == GameManager.Instance.ScoreToWin)
         {
             _uiController.UpdateWinnerText("1");
